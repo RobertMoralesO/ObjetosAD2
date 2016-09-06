@@ -93,9 +93,6 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNumerador2">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNumerador2ActionPerformed"/>
-          </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="220" y="50" width="60" height="-1"/>
@@ -127,9 +124,9 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNumerador3">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNumerador3ActionPerformed"/>
-          </Events>
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="340" y="50" width="60" height="-1"/>
@@ -144,6 +141,9 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="txtDenominador3">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="340" y="90" width="60" height="-1"/>
@@ -154,6 +154,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Calcular"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdCalcularActionPerformed"/>
+          </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="100" y="140" width="-1" height="-1"/>
@@ -162,8 +165,11 @@
         </Component>
         <Component class="javax.swing.JButton" name="cmdLimpiar">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Borrar"/>
+            <Property name="text" type="java.lang.String" value="Limpiar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdLimpiarActionPerformed"/>
+          </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="230" y="140" width="-1" height="-1"/>
